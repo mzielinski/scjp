@@ -1,7 +1,7 @@
-package pl.mzielinski.scjp.asserts;
+package com.mzielinski.scjp.asserts;
 
 /**
- * @author Maciej Zielinski, Rule Financial
+ * @author mzielinski, Rule Financial
  */
 public class AssertTest {
 
@@ -10,31 +10,15 @@ public class AssertTest {
         float f2 = f1;
         float f3 = 1.2f;
 
-        try {
+//        try {
             assert (f2 == f1) : f2 = 2;
             f3 = 1.5f;
-        } catch (AssertionError ae) {
-            System.out.println(ae);
-            f3++;
-        }
-
-        StringBuilder s1 = new StringBuilder("hello");
-        StringBuilder s2 = new StringBuilder("hello");
-
-        System.out.println("equals: " + s1.equals(s2));
+//        } catch (AssertionError ae) {
+//            f3++;
+//        }
 
         f3 += f2;
         System.out.println("f3 = " + f3);
-
-        int val = 1;
-        switch (val) {
-            default:
-                System.out.println("default");
-            case 1:
-                System.out.println("1");
-            case 2:
-                System.out.println("2");
-        }
     }
 
 }

@@ -22,6 +22,7 @@ public class MyPancake implements Pancake {
         System.out.println(x);
     }
 
+    public // has to be public !!!
     List<String> doStuff(List<String> z) {
         z.add("9");
         return z;
