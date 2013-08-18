@@ -1,5 +1,7 @@
 package com.mzielinski.scjp.general;
 
+import static java.lang.System.*;
+
 /**
  * @author mzielinski, Rule Financial
  */
@@ -10,12 +12,12 @@ public class _ {
         for (int i = 0; ++i < ___A_V_.length; ){
             $ += ___A_V_[i];
         }
-        System.out.println($);
+        out.println($);
 
         int x = 1;
         if ((4 > x) ^ ((++x + 2) > 3)) x+=10;
         if ((4 > ++x) ^ !(++x == 5)) x+=100;
-        System.out.println(x);
+        out.println(x);
 
         short[][] b = new short[4][4];
         short[][] big = new short[2][2];
@@ -43,6 +45,6 @@ public class _ {
              }
              continue outer;
          }
-        System.out.println(k);
+        out.println(k);
     }
 }
