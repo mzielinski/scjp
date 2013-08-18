@@ -10,6 +10,7 @@ class Alpha {
 }
 public class Vark extends Alpha{
 
+    @Override
     protected final int doStuff(float b) {
         return super.doStuff(b);
     }

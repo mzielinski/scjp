@@ -1,4 +1,4 @@
-package com.mzielinski.scjp.old;
+package com.mzielinski.scjp.switchs;
 
 /**
  * @author Maciej Zielinski, Rule Financial

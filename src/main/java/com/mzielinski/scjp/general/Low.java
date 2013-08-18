@@ -9,7 +9,7 @@ class High {
     }
 }
 
-public class Low {
+public class Low extends High {
 
     public static String go(Integer x, Integer y) {
         return "low";
@@ -17,7 +17,7 @@ public class Low {
 
     public static void main(String... args) {
         System.out.println(go(9,27));
-//        System.out.println(go(81));
+        System.out.println(go(81));
     }
 
 }

@@ -15,7 +15,7 @@ public class BioDiesel extends AlternateFuel {
 
     public static void main(String... args) {
         new BioDiesel().go();
-//        System.out.println(super.getRating());
+        System.out.println(getRating2()); //super keyword is forbidden. This is a static method
     }
 
     private void go() {
