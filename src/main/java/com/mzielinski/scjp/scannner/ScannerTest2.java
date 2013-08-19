@@ -1,4 +1,4 @@
-package pl.mzielinski.scjp.scannner;
+package com.mzielinski.scjp.scannner;
 
 import java.util.Scanner;
 

@@ -9,17 +9,17 @@ import java.util.List;
  * User: mzielinski
  * Date: 8/12/13 10:47 PM
  */
-
-class A{
-    void getMe(){}
-}
-
-class B extends A{
-    void getMe(){}
-}
-
-
 public class Sorter {
+
+    private class A {
+        void getMe() {
+        }
+    }
+
+    private class B extends A {
+        void getMe() {
+        }
+    }
 
     public static void main(String[] args) {
         List<String> aList = new ArrayList<String>();
