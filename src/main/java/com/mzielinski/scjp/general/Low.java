@@ -4,7 +4,8 @@ package com.mzielinski.scjp.general;
  * @author mzielinski, Rule Financial
  */
 class High {
-    public static String go(int... x) {
+
+    protected static String go(int... x) {
         return "hi";
     }
 }

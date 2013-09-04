@@ -9,6 +9,10 @@ public class Initialization {
         System.out.println("Outer");
     }
 
+    int add(int i, int j) {
+        return i + j;
+    }
+
     public class InnerTest {
         InnerTest() {
             System.out.println("Inner constructor");
@@ -25,6 +29,10 @@ public class Initialization {
             public void f() {
                 t.f();
                 System.out.println("Sub Inner f");
+
+                short s = 9;
+                int add = t.add(s, 6);
+                System.out.println(add);
             }
         };
         test.f();

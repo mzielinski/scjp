@@ -24,6 +24,8 @@ public class Vark extends Alpha{
     }
 
     public <S extends CharSequence> S foo(S s) {
-        return (S) new StringBuilder(s);
+//        return (S) new StringBuilder(s);
+//        return s;
+        return null;
     }
 }

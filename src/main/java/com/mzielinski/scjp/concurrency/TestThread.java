@@ -1,4 +1,4 @@
-package com.mzielinski.scjp.concurrecy;
+package com.mzielinski.scjp.concurrency;
 
 /**
  * User: mzielinski

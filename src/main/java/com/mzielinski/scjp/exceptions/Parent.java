@@ -26,8 +26,14 @@ public class Parent {
 }
 
 class Child extends Parent {
+
     @Override
-    public void amethod(int i) {}
+//    public void amethod(int i) throws IOException, RuntimeException {}
+    public void amethod(int i) throws FileNotFoundException {}
+//    public void amethod(int i) {}
+//    public void amethod(int i) throws RuntimeException {}
+//    public void amethod(int i) throws Exception {} - Wrong
+//    public void amethod(int i) throws Throwable {} - Wrong
 
     public static void main(String ... args) throws IOException {
         Parent parent = new Parent();

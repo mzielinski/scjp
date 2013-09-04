@@ -5,7 +5,7 @@ package com.mzielinski.scjp.declarations;
  */
 class MyOuter {
 
-    private class MyInner {
+    class MyInner {
         float f() {
             return 1.2f;
         }
@@ -19,6 +19,6 @@ class MyOuter {
 class Test {
     public static void main(String[] args) {
         MyOuter outer = new MyOuter();
-//        System.out.println(outer.getInner().f());
+        System.out.println(outer.getInner().f());
     }
 }

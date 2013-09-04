@@ -21,5 +21,7 @@ public class Putter {
 //        Bingo b8 = b3;
         Bingo b9 = (Bingo) b3;
         Bango b10 = (Bongo) b3;
+
+        System.out.println("FXOPTION/VANILLA/USD/VANILLA".replaceAll("[VILAN]+", "ASIAN"));
     }
 }

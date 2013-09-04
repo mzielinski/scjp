@@ -21,17 +21,17 @@ public class Macintosh extends Apple {
         System.out.println(list.size());
     }
 
-    private static void basket(List<Apple> list) {
-        // list.add(new Object()); // error
-        list.add(new Apple());
-        list.add(new Macintosh());
-    }
-
-//    private static void basket(List<? super Apple> a) {
-//        // a.add(new Object()); // error
-//        a.add(new Apple());
-//        a.add(new Macintosh());
+//    private static void basket(List<Apple> list) {
+//        // list.add(new Object()); // error
+//        list.add(new Apple());
+//        list.add(new Macintosh());
 //    }
+//
+    private static void basket(List<? super Apple> a) {
+//        a.add(new Object()); // error
+        a.add(new Apple());
+        a.add(new Macintosh());
+    }
 
 //    private static void basket(List<?> list) {
 //        System.out.println(list.size());

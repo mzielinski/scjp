@@ -20,8 +20,8 @@ public class MyClass {
         StringBuilder s4 = new StringBuilder("hello");
         StringBuilder s5 = new StringBuilder("hello");
         Float f1 = 9.0f;
-        Double f2 = 9.0d;
-        System.out.println(f1.equals(f2.floatValue()));
+        Double f2 = 9.0;
+        System.out.println(f1.equals(f2));
         System.out.println(s4 == s5);
         System.out.println(s4.equals(s5));
     }

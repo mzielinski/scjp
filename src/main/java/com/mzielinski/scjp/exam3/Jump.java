@@ -25,7 +25,7 @@ public class Jump {
         new Jump();
         new Thread(new Runnable() {
             public void run() {
-                ;
+//                System.out.print(Thread.currentThread().getName() + " ");
             }
         }, "carol").start();
         new Thread(new Paratrooper(), "alice").start();

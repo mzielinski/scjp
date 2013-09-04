@@ -23,7 +23,7 @@ public class BirdHouse {
 
         Date d = new Date();
         DateFormat df;
-        Locale[] la = {new Locale("it", "IT"), new Locale("pt")};
+        Locale[] la = {new Locale("it", "IT"), new Locale("pl")};
         for (Locale l : la) {
             df = DateFormat.getDateInstance(DateFormat.FULL, l);
             System.out.println(df.format(d));

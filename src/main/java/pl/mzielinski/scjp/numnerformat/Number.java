@@ -1,12 +1,17 @@
 package pl.mzielinski.scjp.numnerformat;
 
 import java.text.NumberFormat;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Locale;
 
 /**
  * @author Maciej Zielinski, Rule Financial
  */
 public class Number {
+
+    public Number() { // synchronized  is not allowed here
+    }
 
     public static void main(String... args) {
         NumberFormat numberFormat = NumberFormat.getInstance(Locale.UK);
@@ -17,9 +22,9 @@ public class Number {
 //        numberFormat.setMaximumDecimalDigits(2);
         System.out.println(numberFormat.format(54567.678));
 
-        String str = "aaaaaaaaabbs";
-        String [] s = str.split("a{2}b{2}");
-        System.out.println(s.length);
+        String str = "aaaaaaaaabb";
+        String [] s = str.split("a{3}");
+        System.out.println(Arrays.asList(s));
 
     }
 }

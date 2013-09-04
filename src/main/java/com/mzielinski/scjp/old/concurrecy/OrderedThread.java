@@ -4,6 +4,7 @@ package com.mzielinski.scjp.old.concurrecy;
  * @author mzielinski, Rule Financial
  */
 public class OrderedThread {
+
     public static void main(String[] args) {
         MBThread first, second, third;
         OrderedThread orderedThread = new OrderedThread();
@@ -18,7 +19,7 @@ public class OrderedThread {
     public void display(String msg) {
         synchronized (msg) {
             for (int i = 0; i < 20; i++) {
-                System.out.println("Name= " + msg);
+                System.out.println(msg);
             }
         }
     }

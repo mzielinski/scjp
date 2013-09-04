@@ -1,38 +1,38 @@
-package com.mzielinski.scjp.concurrecy;
+package com.mzielinski.scjp.concurrency;
 
 /**
  * User: mzielinski
  * Date: 8/12/13 10:43 PM
  */
-class MyThread extends Thread {
-    String sa;
+public class MyThread extends Thread {
 
-    public MyThread(String sa) {
-        this.sa = sa;
-    }
+    private String sa = "Not Done";
 
     public void run() {
-        synchronized (sa) {
-            while (!sa.equals("Done")) {
+        synchronized (MyThread.class) {
+            while (!"Done".equals(sa)) {
                 try {
-                    sa.wait();
-                } catch (InterruptedException ie) {
-                }
+                    MyThread.class.wait();
+                } catch (InterruptedException ignored) {}
             }
         }
         System.out.println(sa);
     }
+
+    void setSa(String sa) {
+        this.sa = sa;
+    }
 }
 
 class Test {
-    private static String sa = new String("Not Done");
 
-    public static void main(String[] args) {
-        Thread t1 = new MyThread(sa);
+    public static void main(String[] args) throws InterruptedException {
+        MyThread t1 = new MyThread();
         t1.start();
-        synchronized (sa) {
-            sa = new String("Done");
-            sa.notify();
+        Thread.sleep(2000);
+        synchronized (MyThread.class) {
+            t1.setSa("Done");
+            MyThread.class.notify();
         }
     }
 }

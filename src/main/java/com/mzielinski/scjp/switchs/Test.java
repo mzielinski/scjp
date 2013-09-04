@@ -11,8 +11,8 @@ public class Test {
         while (i < 5) {
             switch ((int) i + 2) {
                 default:
-//                case j: System.out.println("one");
-                case s + 1:
+                case j: System.out.println("one");
+                case s + 2:
                 {
                     System.out.println("two");
                     break;

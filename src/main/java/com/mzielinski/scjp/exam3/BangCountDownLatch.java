@@ -17,7 +17,6 @@ class StopLatchedThread extends Thread {
     public void run() {
         try {
             for (int i = 0; i < 500; i++) {
-//                System.out.println(i + ": " + Thread.currentThread().getId() + " ");
                 if (i == 250)
                     try {
                         System.out.println("**" + Thread.currentThread().getId() + "**");
@@ -31,7 +30,7 @@ class StopLatchedThread extends Thread {
     }
 }
 
-public class Bang extends Thread {
+public class BangCountDownLatch extends Thread {
 
     public static void main(String[] args) throws Exception {
         long start = System.nanoTime();

@@ -11,6 +11,7 @@ public class Volume {
     public static void main(String[] args) {
         Volume myV = new Volume();
         final Volume v2;
+        System.out.println(myV);
         v2 = myV.doStuff(myV);
         v2.v.size = 7;
         System.out.print(v2.size);
