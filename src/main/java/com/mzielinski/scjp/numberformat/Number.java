@@ -1,4 +1,4 @@
-package pl.mzielinski.scjp.numnerformat;
+package com.mzielinski.scjp.numberformat;
 
 import java.text.NumberFormat;
 import java.util.Arrays;
