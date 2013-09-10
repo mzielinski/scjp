@@ -23,7 +23,6 @@ public class BackLister {
         for (T t : input) {
             output.add(0, t);
         }
-
         return output;
     }
 
